@@ -20,7 +20,8 @@
   "dependencies": {
     "@astrojs/solid-js": "1.0.0",
     "@astrojs/tailwind": "^1.0.0",
-      "cypress": "^10.0.3",
+    "cypress": "^10.0.3",
+    "daisyui": "^2.24.0",
     "solid-js": "1.4.8"
   }
 }
