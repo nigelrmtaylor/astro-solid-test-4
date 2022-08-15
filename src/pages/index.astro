@@ -7,16 +7,22 @@ import Layout from '../components/Layout.astro';
 //
 import Bob from '../components/Bob.astro';
 
-import Sol from '../components/Sol.tsx';
+//
+//solidjs Components
+//
+import Sol from '../components/Sol.jsx';
+import Swipe from '../components/Swipe.jsx';
 ---
 
 <Layout title="Astro Toolbox">
   <main>
-    <hr/>
-    <Bob/>
-     <span class="font-bold">without the client loadjjuu</span>
-    <hr/>
-    <Sol client:load/>
+    <hr />
+    <Bob />
+    <span class="font-bold">without the client loadjjuu</span>
+    <hr />
+    <Sol client:load />
+    <hr />
+    <Swipe client:load />
 
   </main>
 </Layout>
@@ -25,6 +31,7 @@ import Sol from '../components/Sol.tsx';
   :root {
     text-align: center;
   }
+
   .logo img {
     padding: 30px 0;
     width: 100%;
@@ -38,7 +45,7 @@ import Sol from '../components/Sol.tsx';
     margin: 0 auto;
     max-width: 60ch;
     align-items: center;
-  } 
+  }
 
   footer {
     width: 100%;
