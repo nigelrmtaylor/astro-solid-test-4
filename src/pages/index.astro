@@ -12,17 +12,27 @@ import Bob from '../components/Bob.astro';
 //
 import Sol from '../components/Sol.jsx';
 import Swipe from '../components/Swipe.jsx';
+import Toggle from '../components/solid/Toggle.jsx';
 ---
 
 <Layout title="Astro Toolbox">
   <main>
-    <hr />
+
+
     <Bob />
     <span class="font-bold">without the client loadjjuu</span>
     <hr />
     <Sol client:load />
     <hr />
-    <Swipe client:load />
+    <Toggle label="the label" description="the description"/>
+    
+<div>
+  <div class="flex gap-4">
+    <div>left</div>
+    <div>right</div>
+  </div>
+</div>
+
 
   </main>
 </Layout>
