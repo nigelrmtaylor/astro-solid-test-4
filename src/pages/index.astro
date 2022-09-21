@@ -13,6 +13,7 @@ import Bob from '../components/Bob.astro';
 import Sol from '../components/Sol.jsx';
 import Swipe from '../components/Swipe.jsx';
 import Toggle from '../components/solid/Toggle.jsx';
+
 ---
 
 <Layout title="Astro Toolbox">
@@ -24,7 +25,8 @@ import Toggle from '../components/solid/Toggle.jsx';
     <hr />
     <Sol client:load />
     <hr />
-    <Toggle label="the label" description="the description"/>
+    <Toggle  client:load label="the label" description="the description"/>
+
     
 <div>
   <div class="flex gap-4">
